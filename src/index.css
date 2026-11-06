@@ -1,0 +1,115 @@
+@import url('https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/monas.css');
+
+@font-face {
+  font-family: 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Matcha Theme System CSS Custom Properties */
+:root, :root[data-theme="latte"] {
+  color-scheme: light;
+  --szz-crust: #e8eedf;
+  --szz-mantle: #edf3e5;
+  --szz-base: #f4f8ee;
+  --szz-surface-0: #e2ebd9;
+  --szz-surface-1: #d6e2cc;
+  --szz-surface-2: #cbdbbf;
+  --szz-overlay-0: #b3c7a5;
+  --szz-overlay-1: #9cb38d;
+  --szz-overlay-2: #829c73;
+  --szz-text: #243320;
+  --szz-subtext-1: #4d5f46;
+  --szz-subtext-0: #6b8062;
+  --szz-matcha: #4f8a3c;
+  --szz-tea-cream: #fffdf7;
+  --szz-bamboo: #2f7a68;
+  --szz-amber: #9e6b18;
+  --szz-berry: #b83a48;
+  --szz-mauve: #6f50a8;
+  --szz-action-play-text: #fffdf7;
+  --szz-sidebar-icon-bg: #cbdbbf;
+  --szz-scrollbar-track: #e8eedf;
+  --szz-scrollbar-thumb: #b3c7a5;
+  --szz-scrollbar-thumb-hover: #829c73;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --szz-crust: #121711;
+  --szz-mantle: #161c14;
+  --szz-base: #1a2218;
+  --szz-surface-0: #222d20;
+  --szz-surface-1: #2b3829;
+  --szz-surface-2: #354532;
+  --szz-overlay-0: #42543e;
+  --szz-overlay-1: #51664d;
+  --szz-overlay-2: #61795c;
+  --szz-text: #e3ede0;
+  --szz-subtext-1: #b0c2aa;
+  --szz-subtext-0: #8da087;
+  --szz-matcha: #98d184;
+  --szz-tea-cream: #f4edd8;
+  --szz-bamboo: #76c4b2;
+  --szz-amber: #e5b567;
+  --szz-berry: #e06c75;
+  --szz-mauve: #b49ee0;
+  --szz-action-play-text: #121711;
+  --szz-sidebar-icon-bg: #354532;
+  --szz-scrollbar-track: #121711;
+  --szz-scrollbar-thumb: #42543e;
+  --szz-scrollbar-thumb-hover: #61795c;
+}
+
+html, body, #root {
+  background-color: var(--szz-base);
+  color: var(--szz-text);
+  min-height: 100vh;
+  scroll-behavior: auto !important;
+  overscroll-behavior-y: contain;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: 'MonaS12', monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  overflow: hidden;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  letter-spacing: 0em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Pixel rendering guard for crisp bitmap borders */
+.font-pixel, .font-pixel-sm {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  letter-spacing: 0em;
+}
+
+/* Custom SZZ chassis scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--szz-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--szz-scrollbar-thumb);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--szz-scrollbar-thumb-hover);
+}

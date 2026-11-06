@@ -1,0 +1,23 @@
+[package]
+name = "szz-core"
+version = "0.1.0"
+edition = "2021"
+description = "SZZ core launcher engine library"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+directories = "5.0"
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "json", "stream"] }
+tokio = { version = "1", features = ["full"] }
+flate2 = "1.0"
+tar = "0.4"
+zip = { version = "2.1", default-features = false, features = ["deflate"] }
+sha1 = "0.10"
+sha2 = "0.10"
+hex = "0.4"
+libc = "0.2"
+
+[dev-dependencies]
+tempfile = "3.10"

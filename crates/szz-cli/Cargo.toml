@@ -1,0 +1,10 @@
+[package]
+name = "szz-cli"
+version = "0.1.0"
+edition = "2021"
+description = "SZZ core launcher engine test CLI harness"
+
+[dependencies]
+szz-core = { path = "../szz-core" }
+clap = { version = "4.5", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }

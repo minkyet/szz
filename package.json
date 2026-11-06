@@ -1,0 +1,40 @@
+{
+  "name": "szz",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --mode desktop",
+    "build:desktop": "tsc && vite build --mode desktop",
+    "build:web": "tsc && vite build --mode web",
+    "preview": "vite preview",
+    "preview:web": "vite preview --outDir dist-web",
+    "tauri": "tauri",
+    "test": "tsx --test 'scripts/**/*.test.ts' 'src/**/*.test.ts' 'functions/**/*.test.ts'",
+    "convert-modpack": "tsx scripts/convert-modpack.ts"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.2.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.0",
+    "@types/jszip": "^3.4.1",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "jszip": "^3.10.2",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
+  }
+}

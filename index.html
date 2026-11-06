@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-theme="latte">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SZZ Launcher</title>
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('szz_theme');
+          if (saved === 'dark' || saved === 'latte') {
+            document.documentElement.setAttribute('data-theme', saved);
+          } else {
+            document.documentElement.setAttribute('data-theme', 'latte');
+          }
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'latte');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-szz-base text-szz-text font-sans antialiased overflow-hidden select-none">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

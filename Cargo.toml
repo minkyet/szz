@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "crates/szz-core",
+    "crates/szz-cli",
+    "src-tauri",
+]
+resolver = "2"

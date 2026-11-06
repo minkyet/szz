@@ -1,0 +1,9 @@
+.compound-engineering/*.local.yaml
+target/
+temp/
+node_modules/
+dist/
+dist-web/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,13 @@
+{
+  "serverId": "hypixel-1-8-9",
+  "name": "Hypixel Server in Legacy client",
+  "serverAddress": "hypixel.net",
+  "minecraftVersion": "1.8.9",
+  "loader": {
+    "type": "vanilla",
+    "version": ""
+  },
+  "config": null,
+  "manifestVersion": 1,
+  "mods": []
+}

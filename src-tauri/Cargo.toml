@@ -1,0 +1,15 @@
+[package]
+name = "szz-desktop"
+version = "0.1.0"
+edition = "2021"
+description = "SZZ desktop application"
+
+[dependencies]
+tauri = { version = "2.0", features = [] }
+szz-core = { path = "../crates/szz-core" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+
+[build-dependencies]
+tauri-build = { version = "2.0", features = [] }
